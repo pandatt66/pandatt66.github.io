@@ -34,16 +34,10 @@
 }
 
 body {
-    background-image: url('moon.jpg')
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position:center;
-    background-size: cover;
-    margin:0 auto;
-注释掉的属性
-    @-webkit-keyframes rainbow
+    background-color: #faf1cf;
+    margin: 0;
+    color: #34495e;
 }
-
 
 h1 {
     margin: 48px 0 22px -5px;
@@ -104,8 +98,12 @@ blockquote {
     background-color: rgba(66, 185, 131, .1);
 }
 
-pre {
-    padding: 1.5rem !important;
+.line-numbers-rows {
+    border-right-width: 0px !important;
+}
+
+.line-numbers {
+    padding: 1.5rem 1.5rem 1.5rem 3.5rem !important;
     margin: 1rem 0 !important;
     background: #272822;
     overflow: auto;
@@ -113,13 +111,88 @@ pre {
     tab-size: 4;
 }
 
+pre {
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem !important;
+    margin: 1rem 0 !important;
+    background: #272822;
+    overflow: auto;
+    border-radius: 0.35rem;
+    tab-size: 4;
+}
+
+.code-area::after {
+    content: " ";
+    position: absolute;
+    border-radius: 50%;
+    background: #ff5f56;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 12px;
+    margin-top: 12px;
+    -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+    box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+}
+
 code {
     padding: 1px 5px;
+    top: 13px !important;
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
     font-size: 0.91rem;
     color: #e96900;
     background-color: #f8f8f8;
     border-radius: 2px;
+}
+
+.code_copy {
+    position: absolute;
+    top: 0.7rem;
+    right: 25px;
+    z-index: 1;
+    filter: invert(50%);
+    cursor: pointer;
+}
+
+.codecopy_notice {
+    position: absolute;
+    top: 0.7rem;
+    right: 6px;
+    z-index: 1;
+    filter: invert(50%);
+    opacity: 0;
+}
+
+.code_lang {
+    position: absolute;
+    top: 1.2rem;
+    right: 46px;
+    line-height: 0;
+    font-weight: bold;
+    font-family: normal;
+    z-index: 1;
+    filter: invert(50%);
+    cursor: pointer;
+} 
+
+.code-expand {
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    filter: invert(50%);
+    padding: 7px 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: all .3s;
+    transform: rotate(0deg);
+}
+
+.code-closed .code-expand {
+    transform: rotate(-180deg) !important;
+    transition: all .3s;
+}
+
+.code-closed pre::before {
+    height: 0px;
 }
 
 pre code {
@@ -174,9 +247,9 @@ mark {
     margin-bottom: 0;
 }
 
-.bg-color {
-    background: #92a8d1;
-}
+/*.bg-color {
+    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+}*/
 
 .text-color {
     color: #0f9d58 !important;
@@ -354,7 +427,7 @@ header .go-back i {
 }
 
 /* 背景图效果. */
-.bg-cover {
+/*.bg-cover {
     position: relative;
     display: flex;
     align-items: center;
@@ -365,7 +438,7 @@ header .go-back i {
     background-position: center center;
     background-size: cover;
     transform: translate3d(0px, 0px, 0px);
-}
+}*/
 
 .index-cover {
     height: 100vh;
@@ -377,10 +450,10 @@ header .go-back i {
 
 /*.bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;*/
-}
+    animation: rainbow 60s infinite;
+}*/
 
-.bg-cover:before, .bg-cover:after {
+/*.bg-cover:before, .bg-cover:after {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -389,7 +462,7 @@ header .go-back i {
     left: 0;
     top: 0;
     content: "";
-}
+}*/
 
 .bg-cover .container {
     position: relative;
@@ -414,7 +487,7 @@ header .go-back i {
     font-size: 3rem;
 }
 
-@-webkit-keyframes rainbow {
+/*@-webkit-keyframes rainbow {
     0%,
     100% {
         background: rgba(156, 39, 176, 0.75);
@@ -453,8 +526,8 @@ header .go-back i {
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
 }
-
-@keyframes rainbow {
+*/
+/*@keyframes rainbow {
     0%,
     100% {
         background: rgba(156, 39, 176, 0.75);
@@ -493,7 +566,7 @@ header .go-back i {
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
 }
-
+*/
 .carousel .indicators {
     padding-bottom: 10px !important;
 }
@@ -856,19 +929,34 @@ article .article-tags .chip {
     margin-bottom: -5px;
 }
 
-#artDetail .article-tag {
-    float: left;
-}
-
 #artDetail .article-tag .chip {
     font-size: 1rem;
     font-weight: 400;
     height: 25px;
-    line-height: 25px;
+    line-height: 24px;
     color: #fff;
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
+}
+
+#artDetail .tag_share .article-tag .chip {
+    font-size: 1rem;
+    font-weight: 400;
+    height: 25px;
+    line-height: 23px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    color: #42b983;
+    background: #fff;
+    border: 1px solid;
+    transition: all 0.6s ease-in-out;
+}
+
+#artDetail .tag_share .article-tag .chip:hover {
+    color: #fff;
+    background: #42b983;
 }
 
 #artDetail .post-cate {
@@ -944,6 +1032,15 @@ article .article-tags .chip {
 
 #artDetail .reprint {
     margin: 15px 0 5px 0;
+    margin-bottom: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #eee;
+    line-height: 2;
+    transition: box-shadow 0.3s ease-in-out
+}
+
+#artDetail .reprint:hover {
+    box-shadow: 0 0 10px 0 rgba(232, 237, 250, .6), 0 4px 8px 0 rgba(232, 237, 250, .5)
 }
 
 #artDetail .reprint .reprint-tip {
@@ -1043,14 +1140,9 @@ table tr:nth-child(2n), thead {
     visibility: visible;
 }
 
-#article-share .social-share {
-    text-align: center;
-    margin: 30px 0;
-}
-
 @media only screen and (min-width: 600px) {
     #article-share .social-share a {
-        margin-right: 15px !important;
+        margin-left: 15px !important;
     }
 }
 
@@ -1087,15 +1179,12 @@ table tr:nth-child(2n), thead {
 
 .chip-container .chip {
     margin: 10px 10px;
-    padding: 0 14px;
-    display: inline-block;
-    height: 38px;
-    min-width: 80px;
-    line-height: 39px;
+    padding: 19px 14px;
+    display: inline-flex;
+    line-height: 0;
     font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
-    word-wrap: break-word;
     cursor: pointer;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .12);
 }
@@ -1109,10 +1198,13 @@ table tr:nth-child(2n), thead {
     margin-left: 5px;
     margin-right: -2px;
     font-size: 0.5rem;
+    position: relative;
+    top: 1px;
 }
 
 .chip-default .tag-length {
     color: #e91e63;
+    margin-top: 1px;
 }
 
 .chip-active .tag-length {
@@ -1670,7 +1762,7 @@ footer .copy-right {
     border-radius: 2px;
     background-color: #f2f2f2;
     color: #e96900;
-    font-size: .9rem;
+    font-style: normal;
     white-space: pre-wrap;
 }
 
@@ -1812,7 +1904,7 @@ footer .copy-right {
 
 .nav-menu li .sub-nav {
     position: absolute;
-    top: 77px;
+    top: 66px;
     list-style: none;
     margin-left: -20px;
     display: none;
