@@ -466,20 +466,20 @@ header .go-back i {
 
 .bg-cover .container {
     position: relative;
-    color: #fff873;
+    color: #faedaf;
     z-index: 2;
 }
 
 .bg-cover .title {
     font-size: 4rem;
-    line-height: 1.85em;
-    margin-bottom: 20px;
+    line-height: 1em;
+    margin-bottom: 15px;
     position: relative;
 }
 
 .bg-cover .description {
-    font-size: 1.25rem;
-    line-height: 1.4em;
+    font-size: 2rem;
+    line-height: 1em;
     color: #e1fccf;
 }
 
@@ -1625,8 +1625,8 @@ table tr:nth-child(2n), thead {
     top: 0;
     left: 0;
     width: 110px;
-    font-size: 0.9rem;
-    color: #fa9507;
+    font-size: 1.1rem;
+    color: #FFFFFF;
     border-radius: 35px;
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
