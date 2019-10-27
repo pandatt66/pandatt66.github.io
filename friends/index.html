@@ -52,7 +52,7 @@
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
-      <span>Index</span>
+      <span>Home</span>
     </a>
     
   </li>
@@ -143,7 +143,7 @@
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
-			Index
+			Home
 		</a>
           
         </li>
@@ -563,6 +563,28 @@
         </div>
         <div class="card">
 
+            
+            <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: 'pandatt66.github.io',
+        owner: 'pandatt',
+        admin: "pandatt",
+        id: '2019-10-25T11-18-11',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
             
 
             
