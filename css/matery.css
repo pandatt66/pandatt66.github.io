@@ -948,7 +948,7 @@ article .article-tags .chip {
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
-    color: #42b983;
+    color: #FFC0CB;
     background: #fff;
     border: 1px solid;
     transition: all 0.6s ease-in-out;
@@ -956,17 +956,17 @@ article .article-tags .chip {
 
 #artDetail .tag_share .article-tag .chip:hover {
     color: #277343;
-    background: #42b983;
+    background: #FFC0CB;
 }
 
 #artDetail .post-cate {
     float: right;
-    color: #42b983;
+    color: #FFC0CB;
 }
 
 #artDetail .post-cate a {
     padding-right: 5px;
-    color: #42b983;
+    color: #FFC0CB;
     font-weight: 500;
 }
 
@@ -985,7 +985,7 @@ article .article-tags .chip {
 
 #artDetail .post-info .post-category:hover {
     font-weight: bold;
-    color: #42b983;
+    color: #FFC0CB;
     text-decoration: underline;
 }
 
