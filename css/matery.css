@@ -679,7 +679,7 @@ header .go-back i {
     border: 0;
     border-radius: 10px;
     color: rgba(0, 0, 0, .87);
-    background: #277343 50%;
+    background: #e3fae7 50%;
     background-size: cover;
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
 }
@@ -703,7 +703,7 @@ header .go-back i {
 }
 
 .recommend .post-card a {
-    color: #277343;
+    color: #e3fae7;
 }
 
 .recommend .post-card .post-title {
@@ -727,7 +727,7 @@ header .go-back i {
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 40px;
-    color: #277343;
+    color: #e3fae7;
     border-radius: 30px;
     box-shadow: 0 2px 2px 0 rgba(244, 67, 54, .14), 0 3px 1px -2px rgba(244, 67, 54, .2), 0 1px 5px 0 rgba(244, 67, 54, .12);
 }
@@ -832,7 +832,7 @@ article .article-tags .chip {
     font-weight: 400;
     height: 22px;
     line-height: 22px;
-    color: #277343;
+    color: #e3fae7;
     border-radius: 10px;
 }
 
@@ -850,7 +850,7 @@ article .article-tags .chip {
     position: absolute;
     box-sizing: border-box;
     z-index: 200;
-    background-color: #277343;
+    background-color: #e3fae7;
     font-weight: 500;
 }
 
@@ -948,25 +948,25 @@ article .article-tags .chip {
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
-    color: #FFC0CB;
+    color: #42b983;
     background: #fff;
     border: 1px solid;
     transition: all 0.6s ease-in-out;
 }
 
 #artDetail .tag_share .article-tag .chip:hover {
-    color: #277343;
-    background: #FFC0CB;
+    color: #e3fae7;
+    background: #42b983;
 }
 
 #artDetail .post-cate {
     float: right;
-    color: #FFC0CB;
+    color: #42b983;
 }
 
 #artDetail .post-cate a {
     padding-right: 5px;
-    color: #FFC0CB;
+    color: #42b983;
     font-weight: 500;
 }
 
@@ -985,7 +985,7 @@ article .article-tags .chip {
 
 #artDetail .post-info .post-category:hover {
     font-weight: bold;
-    color: #FFC0CB;
+    color: #42b983;
     text-decoration: underline;
 }
 
@@ -1190,7 +1190,7 @@ table tr:nth-child(2n), thead {
 }
 
 .chip-container .chip:hover {
-    color: #277343;
+    color: #e3fae7;
     background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;
 }
 
