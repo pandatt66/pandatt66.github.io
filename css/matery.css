@@ -55,7 +55,7 @@ h2 {
 
 h3 {
     margin: 38px 0 15px -4px;
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     font-weight: bold;
     line-height: 1.7rem;
 }
@@ -698,7 +698,7 @@ header .go-back i {
 .recommend .post-card .post-categories .category {
     padding: 0 8px;
     color: hsla(0, 0%, 100%, .7) !important;
-    font-size: .75rem;
+    font-size: 1.75rem;
     font-weight: 500;
 }
 
@@ -717,7 +717,7 @@ header .go-back i {
     max-width: 500px;
     height: 65px;
     max-height: 65px;
-    font-size: 14px;
+    font-size: 18px;
     color: hsla(0, 0%, 100%, .78) !important;
 }
 
@@ -1579,7 +1579,7 @@ table tr:nth-child(2n), thead {
     text-align: center;
     line-height: 76px;
     color: #fff;
-    font-size: 1.75rem;
+    font-size: 4.75rem;
     border-radius: 50%;
 }
 
