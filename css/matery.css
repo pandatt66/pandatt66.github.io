@@ -1686,7 +1686,7 @@ table tr:nth-child(2n), thead {
     box-shadow: 0 5px 5px rgba(0, 0, 0, .25)
 }
 
-.my-gallery {
+/*.my-gallery {
     margin: 4.5rem auto 1rem;
     padding: 0 1.2rem;
     max-width: 1100px;
@@ -1701,7 +1701,29 @@ table tr:nth-child(2n), thead {
     height: 200px;
     border-radius: 10px;
     cursor: pointer;
+}*/
+
+.my-gallery {
+    margin: 4.5rem auto 1rem;
+    padding: 0 12rem;/*这是显示宽度，前边是页面宽度，后边是图片宽度*/
+    max-width: 1100;
+  /*position: relative;*/
+
 }
+
+.my-gallery .photo {
+   margin: .5rem 0;/*这是上下两行的行距*/
+    /*position: relative;
+   overflow: hidden;*/
+
+}
+
+.my-gallery .photo img {
+    /*width: 100%;*/
+    height: 200px;/*限制高度，使同行保持等高，不然会很乱*/
+    border-radius: 10px;
+    cursor: pointer;
+/*height: 200px;
 
 /*尾部样式*/
 footer {
